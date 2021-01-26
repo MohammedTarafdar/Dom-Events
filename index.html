@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgb(196, 243, 228);
+        }
+        section{
+            border: 2px solid tomato;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 id="firstHeared">Hello HTML</h1>
+            <h3 class="source">Resource: w3school</h3>
+            <p class="description">I have learned basic html and I enjoyed it.</p>
+        </section>
+        <section>
+            <h1>Hello CSS</h1>
+            <h3 class="source">Resource: w3school</h3>
+            <p class="description">I have learned basic CSS also and It was fun too.</p>
+        </section>
+        <section>
+            <h1>Hello JavaScript </h1>
+            <h3 class="source">Resource: w3school</h3>
+            <p class="description">I am exploring JavaScript and I start liking this language.</p>
+        </section>   
+    </main>
+    
+    <script>
+        
+        var sources = document.getElementsByClassName('source');
+        //console.log(sources);
+        for(var i=0; i<sources.length; i++){
+            var element = sources[i];
+            //console.log(element);
+            element.style.backgroundColor = 'gray';
+            element.style.color = 'white';
+            element.innerHTML = 'Author-'+(i+1);
+            element.style.padding = '10px';
+        }
+
+        
+        
+    </script>
+</body>
+</html>

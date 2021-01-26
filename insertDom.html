@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsertElementsInDOM</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgb(233, 220, 233);
+
+        }
+        article{
+            border: 2px solid rgb(129, 9, 241);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <article id="first-articale">
+            <h1>Hello World One</h1>
+            <p>This is the world. Where we all live. We all love this world. We have to keep safe for our next generation.</p>
+        </article>
+        <article>
+            <h1>World Two</h1>
+            <p>This is the world. Where we all live. We all love this world. We have to keep safe for our next generation.</p>
+        </article>
+        <article>
+            <h1>World Three</h1>
+            <p>This is the world. Where we all live. We all love this world. We have to keep safe for our next generation.</p>
+        </article>
+    </main>
+
+    <script>
+        var articleOne = document.getElementById('first-articale');
+        var newParagraph = document.createElement('p');
+        newParagraph.innerHTML = 'This paragraph added by JavaScript';
+        articleOne.appendChild(newParagraph);
+
+    </script>
+    
+</body>
+</html>
